@@ -1,8 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+	<h1 [innerText]="title"></h1>
 
-<tabs>
-    <tab [tabTitle]="'Tab 1'">Tab 1 Content</tab>
-    <tab tabTitle="Tab 2">Tab 2 Content</tab>
-</tabs>
+	<tabs>
+		<tab [tabTitle]="'Tab 1'">
+			<h2>Tab 1 Content</h2>
+		</tab>
+		<tab tabTitle="Tab 2">
+			<h2>Tab 2 Content</h2>
+		</tab>
+		<tab tabTitle="Tab 3">
+			<h2>Tab 3 Content</h2>
+		</tab>
+		<tab tabTitle="Tab 4">
+			<h2>Tab 4 Content</h2>
+		</tab>
+	</tabs>
+</div>
