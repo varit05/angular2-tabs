@@ -1,18 +1,32 @@
 <div class="container">
 	<h1 [innerText]="title"></h1>
 
+  <h2>Examples</h2>
+  <p></p>
+  <h4>1. Simple Tabs</h4>
 	<tabs>
-		<tab [tabTitle]="'Tab 1'">
-			<h2>Tab 1 Content</h2>
+		<tab [tabTitle]="'Mobile'">
+			<h2>Mobile Content</h2>
 		</tab>
-		<tab tabTitle="Tab 2">
-			<h2>Tab 2 Content</h2>
+		<tab tabTitle="Tablet">
+			<h2>Tablet Content</h2>
 		</tab>
-		<tab tabTitle="Tab 3" tabIcon="glyphicon glyphicon-home">
-			<h2>Tab 3 Content</h2>
-		</tab>
-		<tab tabTitle="Tab 4">
-			<h2>Tab 4 Content</h2>
+		<tab tabTitle="Desktop">
+			<h2>Desktop Content</h2>
 		</tab>
 	</tabs>
+  <hr>
+
+  <h4>2. Tabs with Icon</h4>
+  <tabs>
+    <tab [tabTitle]="'Mobile'" tabIcon="glyphicon glyphicon-phone">
+      <h2>Mobile Content</h2>
+    </tab>
+    <tab tabTitle="Tablet" tabIcon="glyphicon glyphicon-th-list">
+      <h2>Tablet Content</h2>
+    </tab>
+    <tab tabTitle="Desktop" tabIcon="glyphicon glyphicon-home">
+      <h2>Desktop Content</h2>
+    </tab>
+  </tabs>
 </div>
